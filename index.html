@@ -9,6 +9,17 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	<style>
+        /* Add custom styles if needed */
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        .fixed-height-img {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar bg-body-tertiary">
@@ -39,7 +50,7 @@
 								<div class="info-area">
 									<h4>Kian Carl Gutierrez</h4>
 									<p>Bachelor of Science in Computer Science</p>
-                                    <a href="#">Learn More</a>
+                                    <a href="#" data-toggle="modal" data-target="#portfolioModalKian">Learn More</a>
 								</div>
 							</div>
 							<div class="single-box text-center">
@@ -47,7 +58,7 @@
 								<div class="info-area">
 									<h4>Jayson Pardilla</h4>
 									<p>Bachelor of Science in Computer Science</p>
-                                    <a href="#">Learn More</a>
+                                    <a href="#" data-toggle="modal" data-target="#portfolioModalJayson">Learn More</a>
 								</div>
 							</div>
 							<div class="single-box text-center">
@@ -55,7 +66,7 @@
 								<div class="info-area">
 									<h4>Mark Deniel Aberte</h4>
 									<p>Bachelor of Science in Computer Science</p>
-                                    <a href="#">Learn More</a>
+                                    <a href="#" data-toggle="modal" data-target="#portfolioModalAberte">Learn More</a>
 								</div>
 							</div>
 							<div class="single-box text-center">
@@ -63,7 +74,7 @@
 								<div class="info-area">
 									<h4>Mark Cedric Mesias</h4>
 									<p>Bachelor of Science in Computer Science</p>
-                                    <a href="#">Learn More</a>
+                                    <a href="#" data-toggle="modal" data-target="#portfolioModalMesias">Learn More</a>
 								</div>
 							</div>
 							<div class="single-box text-center">
@@ -71,7 +82,7 @@
 								<div class="info-area">
 									<h4>Riza Mea Jandoc</h4>
 									<p>Bachelor of Science in Computer Science</p>
-                                    <a href="#">Learn More</a>
+                                    <a href="#" data-toggle="modal" data-target="#portfolioModalRiza">Learn More</a>
 								</div>
 							</div>
 						</div>
@@ -80,6 +91,173 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Kian -->
+	<div class="modal fade" id="portfolioModalKian" tabindex="-1" aria-labelledby="portfolioModalLabelKian" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="portfolioModalLabelKian">Portfolio - Kian</h5>
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+				</div>
+				<div class="modal-body bg-dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="/img/Kian.jpg" class="img-fluid fixed-height-img" alt="Descriptive Image">
+							</div>
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<div class="text-left mb-3">
+									<img src="/logo/Refreshify Logo.png" class="img-fluid" alt="Logo" style="max-width: 150px;">
+									<h3 class="d-inline-block align-text-center font-weight-bold text-white">Refreshify</h3>
+								</div>
+								<div class="text-center mb-3 text-light">
+									<p class="align-text-left">At Refreshify, we’re passionate about delivering refreshing, high-quality drinks right to your door. Our curated selection from local tea shops and artisans ensures there’s something for every taste—whether it's bubble tea, cold brew, or fresh juices. We're committed to supporting local businesses and providing a seamless shopping experience, all while prioritizing sustainability and quality.</p>
+									<p>Sip happy. Live refreshed.</p>
+								</div>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary">Go to website</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jayson -->
+	<div class="modal fade" id="portfolioModalJayson" tabindex="-1" aria-labelledby="portfolioModalLabelJayson" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="portfolioModalLabelJayson">Portfolio - Jayson</h5>
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+				</div>
+				<div class="modal-body bg-dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="/img/Jayson.jpg" class="img-fluid fixed-height-img" alt="Descriptive Image">
+							</div>
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<div class="text-left mb-3">
+									<img src="/logo/Jlogo.jpg" class="img-fluid" alt="Logo" style="max-width: 150px;">
+									<h3 class="d-inline-block align-text-center font-weight-bold text-white">Pythomas</h3>
+								</div>
+								<div class="text-center mb-3 text-light">
+									<p>We provide compassionate and personalized care for your beloved pets. Our team is committed to ensuring the well-being and happiness of each animal we look after, creating a warm and safe environment where they can feel at home.</p>
+                					<p>Whether it's grooming, boarding, or a check-up, we handle each pet with the utmost love and attention. Our cat master specializes in creating bonds with even the most reserved felines, ensuring they receive the comfort and care they deserve.</p>
+								</div>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary">Go to website</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Aberte -->
+	<div class="modal fade" id="portfolioModalAberte" tabindex="-1" aria-labelledby="portfolioModalLabelAberte" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="portfolioModalLabelAberte">Portfolio - Aberte</h5>
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+				</div>
+				<div class="modal-body bg-dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="/img/Aberte.jpeg" class="img-fluid fixed-height-img" alt="Descriptive Image">
+							</div>
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<div class="text-left mb-3">
+									<img src="/logo/AberteLogo.jpg" class="img-fluid" alt="Logo" style="max-width: 150px;">
+									<h3 class="d-inline-block align-text-center font-weight-bold text-white">MD Fresh Shop</h3>
+								</div>
+								<div class="text-center mb-3 text-light">
+									<p>MD Fresh Shop is your go-to online destination for the finest selection of fresh vegetables, offering a range of produce sourced from trusted local growers. Whether you're looking for crisp greens, vibrant root vegetables, or seasonal favorites, MD Fresh Shop is dedicated to delivering the best straight to your doorstep. The shop takes pride in providing a convenient and reliable way for customers to access nutritious, farm-fresh vegetables, perfect for cooking, meal prepping, or boosting a healthy lifestyle. With a user-friendly platform and a commitment to freshness, MD Fresh Shop makes it easier than ever to enjoy quality produce at affordable prices.</p>
+								</div>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary">Go to website</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mesias -->
+	<div class="modal fade" id="portfolioModalMesias" tabindex="-1" aria-labelledby="portfolioModalLabelMesias" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="portfolioModalLabelMesias">Portfolio - Mesias</h5>
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+				</div>
+				<div class="modal-body bg-dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="/img/Mesias.jpg" class="img-fluid fixed-height-img" alt="Descriptive Image">
+							</div>
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<div class="text-left mb-3">
+									<img src="/logo/MesiasLogo - Copy.png" class="img-fluid" alt="Logo" style="max-width: 150px;">
+									<h3 class="d-inline-block align-text-center font-weight-bold text-white">MoolyBarkhub</h3>
+								</div>
+								<div class="text-center mb-3 text-light">
+									<p>To provide ethical, responsible dog ownership by connecting responsible breeders with caring families, ensuring the well-being of both dogs and their owners.</p>
+								</div>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary">Go to website</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- riza -->
+	<div class="modal fade" id="portfolioModalRiza" tabindex="-1" aria-labelledby="portfolioModalLabelRiza" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark" id="portfolioModalLabelMesias">Portfolio - rizza</h5>
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+				</div>
+				<div class="modal-body bg-dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="/img/Riza.jpg" class="img-fluid fixed-height-img" alt="Descriptive Image">
+							</div>
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<div class="text-left mb-3">
+									<img src="/logo/Riza Logo.jpg" class="img-fluid" alt="Logo" style="max-width: 150px;">
+									<h3 class="d-inline-block align-text-center font-weight-bold text-white">TechHive</h3>
+								</div>
+								<div class="text-center mb-3 text-light">
+									<p>Tech Hive is a technology-focused marketplace that likely brings together a range of tech products, services, and innovations under one roof. The marketplace concept suggests a platform for multiple vendors or brands to showcase and sell their products, creating a one-stop destination for tech enthusiasts, professionals, and consumers.</p>
+								</div>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary">Go to website</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
 	</script> 
