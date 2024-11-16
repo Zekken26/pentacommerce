@@ -1,6 +1,14 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+.modal-body img {
+	max-width: 100%;
+	height: auto;
+}
+.fixed-height-img {
+	height: 300px;
+	object-fit: cover;
+}
 #team {
 	padding: 30px 0;
 }
